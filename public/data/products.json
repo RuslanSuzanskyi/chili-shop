@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "slug": "red-chili-pepper",
+    "name": "Red Chili Pepper",
+    "price": 4.99,
+    "rating": 4.5,
+    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+  },
+  {
+    "id": 2,
+    "slug": "green-chili-pepper",
+    "name": "Green Chili Pepper",
+    "price": 3.99,
+    "rating": 4.2,
+    "description": "A mild green chili pepper, great for salads and cooking."
+  },
+  {
+    "id": 3,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 4,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 5,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 6,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 7,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 8,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 9,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 10,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 11,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 12,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 13,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 14,
+    "slug": "yellow-chili-pepper",
+    "name": "Yellow Chili Pepper",
+    "price": 5.99,
+    "rating": 4.7,
+    "description": "A sweet and spicy yellow chili pepper."
+  },
+  {
+    "id": 15,
+    "slug": "red-chili-pepper",
+    "name": "Red Chili Pepper",
+    "price": 4.99,
+    "rating": 4.5,
+    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+  },
+  {
+    "id": 16,
+    "slug": "red-chili-pepper",
+    "name": "Red Chili Pepper",
+    "price": 4.99,
+    "rating": 4.5,
+    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+  }
+]

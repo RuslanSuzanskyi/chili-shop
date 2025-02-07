@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Насіння",
+    "slug": "nasinnja"
+  },
+  {
+    "id": 2,
+    "name": "Спеції",
+    "slug": "speciyi"
+  },
+  {
+    "id": 3,
+    "name": "Розсада",
+    "slug": "rozsada"
+  },
+  {
+    "id": 4,
+    "name": "Свіжий перець",
+    "slug": "svizhij-perec"
+  },
+  {
+    "id": 5,
+    "name": "Сушений перець",
+    "slug": "sushenij-perec"
+  },
+  {
+    "id": 6,
+    "name": "Соуси",
+    "slug": "sousi"
+  }
+]
