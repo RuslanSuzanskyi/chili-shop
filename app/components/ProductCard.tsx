@@ -9,19 +9,17 @@ type Props = {
 }
 
 export default function ProductCard({ name, price, categorySlug, productSlug }: Props) {
-  const productLink = getProductLink(categorySlug, productSlug);
-
   return (
     <Card
       sx={{
         height: '40rem',
       }}
     >
-      <Link href={productLink}>
+      <Link href={getProductLink(categorySlug, productSlug)}>
         <CardMedia />
       </Link>
       <CardContent>
-        <Link href={productLink}>
+        <Link href={getProductLink(categorySlug, productSlug)}>
           <Typography>{name}</Typography>
         </Link>
         <Typography>{price}</Typography>

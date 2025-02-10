@@ -2,6 +2,7 @@ import CatalogButton from "./CatalogButton";
 import Container from "./Container";
 import Navigation from "./Navigation";
 import { AppBar, Toolbar } from '@mui/material'
+import ProductsSearch from "./ProductsSearch";
 
 const navItems = [
   { label: "Головна", href: "/" },
@@ -21,8 +22,9 @@ export default function Header() {
         <Toolbar component="nav">
           <Navigation navLinks={navItems} />
         </Toolbar>
-        <Toolbar component="nav">
+        <Toolbar component="nav" sx={{display: "flex", justifyContent: "space-between", gap: 8}}>
           <CatalogButton />
+          <ProductsSearch />
         </Toolbar> 
       </Container>
     </AppBar>
