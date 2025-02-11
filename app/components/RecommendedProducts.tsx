@@ -42,7 +42,7 @@ const RecommendedProducts = () => {
               name={product.name} 
               price={product.price} 
               categorySlug={product.categorySlug} 
-              productSlug={product.productSlug}
+              slug={product.slug}
             />
           ))
         ) : (

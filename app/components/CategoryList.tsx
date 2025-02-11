@@ -31,7 +31,7 @@ const CategoryList = () => {
             <CategoryCard
               key={category.id} 
               name={category.name} 
-              categorySlug={category.categorySlug} 
+              slug={category.slug} 
             />
           ))
         ) : (

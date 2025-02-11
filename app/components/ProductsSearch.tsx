@@ -4,7 +4,6 @@ import { getProductsBySearch } from "@/services/getProducts";
 import { Box, List, ListItem, Paper, TextField, Typography } from "@mui/material";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { getProductLink } from "../utils/getLink";
 
 const ProductsSearch = () => {
   const [search, setSearch] = useState("");
@@ -75,7 +74,7 @@ const ProductsSearch = () => {
           <List>
             {products.map((product) => (
               <ListItem key={product.id} sx={{ px: 2, py: 1 }}>
-                <Link href={getProductLink(product.category, product.slug)} style={{ textDecoration: "none" }}>
+                <Link href={`/catalog/${product.categorySlug}/${product.slug}`}>
                   <Typography>{product.name}</Typography>
                 </Link>
               </ListItem>

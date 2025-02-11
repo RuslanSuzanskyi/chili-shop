@@ -5,7 +5,8 @@
     "name": "Red Chili Pepper",
     "price": 4.99,
     "rating": 4.5,
-    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+    "description": "A spicy red chili pepper, perfect for sauces and dishes.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "name": "Green Chili Pepper",
     "price": 3.99,
     "rating": 4.2,
-    "description": "A mild green chili pepper, great for salads and cooking."
+    "description": "A mild green chili pepper, great for salads and cooking.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 3,
@@ -21,110 +23,124 @@
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 4,
-    "slug": "yellow-chili-pepper",
+    "slug": "1",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 5,
-    "slug": "yellow-chili-pepper",
+    "slug": "2",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 6,
-    "slug": "yellow-chili-pepper",
+    "slug": "3",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 7,
-    "slug": "yellow-chili-pepper",
+    "slug": "4",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 8,
-    "slug": "yellow-chili-pepper",
+    "slug": "5",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 9,
-    "slug": "yellow-chili-pepper",
+    "slug": "6",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 10,
-    "slug": "yellow-chili-pepper",
+    "slug": "7",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 11,
-    "slug": "yellow-chili-pepper",
+    "slug": "8",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 12,
-    "slug": "yellow-chili-pepper",
+    "slug": "9",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 13,
-    "slug": "yellow-chili-pepper",
+    "slug": "10",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 14,
-    "slug": "yellow-chili-pepper",
+    "slug": "11",
     "name": "Yellow Chili Pepper",
     "price": 5.99,
     "rating": 4.7,
-    "description": "A sweet and spicy yellow chili pepper."
+    "description": "A sweet and spicy yellow chili pepper.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 15,
-    "slug": "red-chili-pepper",
+    "slug": "12",
     "name": "Red Chili Pepper",
     "price": 4.99,
     "rating": 4.5,
-    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+    "description": "A spicy red chili pepper, perfect for sauces and dishes.",
+    "categorySlug": "nasinnja"
   },
   {
     "id": 16,
-    "slug": "red-chili-pepper",
+    "slug": "13",
     "name": "Red Chili Pepper",
     "price": 4.99,
     "rating": 4.5,
-    "description": "A spicy red chili pepper, perfect for sauces and dishes."
+    "description": "A spicy red chili pepper, perfect for sauces and dishes.",
+    "categorySlug": "nasinnja"
   }
 ]
