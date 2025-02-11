@@ -1,6 +1,6 @@
 export const getCategories = async () => {
   try {
-    const response = await fetch("api/catagories", { next: { revalidate: 3600 } });
+    const response = await fetch("/api/categories", { next: { revalidate: 3600 } });
     if (!response.ok) {
       throw new Error(`Error fetching categories: ${response.statusText}`);
     }

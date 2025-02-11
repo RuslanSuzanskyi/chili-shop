@@ -1,6 +1,4 @@
-// components/RecommendedProducts.tsx
-
-'use client';
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { CircularProgress, Grid2, Typography } from "@mui/material";

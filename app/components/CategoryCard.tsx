@@ -1,26 +1,26 @@
+"use client";
+
 import { Card, CardContent, CardMedia, Link, Typography } from "@mui/material";
+import { getCategoryLink } from "../utils/getLink";
 
 type Props = {
   name: string;
-  price: number;
-  slug: string;
+  categorySlug: string;
 }
 
-export default function CategoryCard({ name, slug }: Props) {
-  const categoryLink = `/catalog/${slug}`;
-
+export default function CategoryCard({ name, categorySlug }: Props) {
   return (
     <Card
       sx={{
-        height: '30rem',
+        height: '40rem',
       }}
     >
       <CardContent>
-        <Link href={categoryLink}>
+        <Link href={getCategoryLink(categorySlug)}>
           <Typography>{name}</Typography>
         </Link>
       </CardContent>
-      <Link href={categoryLink}>
+      <Link href={getCategoryLink(categorySlug)}>
         <CardMedia />
       </Link>
     </Card>
