@@ -10,3 +10,14 @@ export const getCategories = async () => {
     throw error;
   }
 };
+
+export async function getCategoryName(slug: string): Promise<string> {
+  try {
+    const categories = await getCategories(); 
+    const category = categories.find((cat: { slug: string }) => cat.slug === slug);
+    return category ? category.name : "Каталог товарів";
+  } catch (error) {
+    console.error("Error fetching categories:", error);
+    return "Каталог товарів";
+  }
+}

@@ -1,23 +1,29 @@
+"use client";
+
 import PageTitle from "@/app/components/PageTitle";
-import { Metadata } from "next";
+import { getCategoryName } from "@/services/getCategories";
+import { useEffect, useState } from "react";
 
-type Props = {
-  params: {
-    category?: string;
-  }
-};
+export default function Catalog({ params }: { params: Promise<{ category: string }> }) {
+  const [categoryName, setCategoryName] = useState<string>("");
 
-export function generateMetadata({ params }: Props): Metadata {
-  const categoryName = params.category ? decodeURIComponent(params.category) : "Каталог товарів";
-  
-  return {
-    title: `${categoryName} | Chili Pepper`,
-  };
-};
+  useEffect(() => {
+    const fetchCategoryName = async () => {
+      const resolvedParams = await params;
+      const categorySlug = resolvedParams.category;
 
+      if (categorySlug) {
+        const name = await getCategoryName(categorySlug);
+        setCategoryName(name);
+      }
+    };
 
-export default function Catalog() {
+    fetchCategoryName();
+  }, [params]);
+
   return (
-    <PageTitle title="Каталог"/>
+    <div>
+      <PageTitle title={categoryName }/>
+    </div>
   );
-};
+}
