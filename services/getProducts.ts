@@ -1,6 +1,6 @@
 export const getAllProducts = async () => {
   try {
-    const response = await fetch("/api/products", { next: { revalidate: 3600 } });
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
     if (!response.ok) {
       throw new Error(`Error fetching products: ${response.statusText}`);
     }
@@ -13,8 +13,13 @@ export const getAllProducts = async () => {
 
 export const getProductsBySearch = async (search: string) => {
   try {
-    const products = await getAllProducts();
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
 
+    if (!response.ok) {
+      throw new Error("Error fetching products");
+    }
+
+    const products = await response.json();
     const filteredProducts = products.filter((product: any) =>
       product.name.toLowerCase().includes(search.toLowerCase())
     );
@@ -26,11 +31,18 @@ export const getProductsBySearch = async (search: string) => {
   }
 };
 
+
 export const getRecommendedProducts = async () => {
   try {
-    const products = await getAllProducts();
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
 
-    const recommendedProducts = products.filter((product: any) => 
+    if (!response.ok) {
+      throw new Error("Error fetching products");
+    }
+
+    const products = await response.json();
+
+    const recommendedProducts = products.filter((product: any) =>
       product.rating >= 4.5
     );
 
@@ -43,7 +55,13 @@ export const getRecommendedProducts = async () => {
 
 export const getProductsByCategory = async (category: string) => {
   try {
-    const products = await getAllProducts();
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
+
+    if (!response.ok) {
+      throw new Error("Error fetching products");
+    }
+
+    const products = await response.json();
     
     return products.filter((product: any) => product.category === category);
   } catch (error) {
@@ -52,17 +70,19 @@ export const getProductsByCategory = async (category: string) => {
   }
 };
 
-export const getProductName = async (slug: string) => {
+export const getProductsByName = async (slug: string) => {
   try {
-    const response = await fetch(`/api/products/${slug}`);
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/products`);
+
     if (!response.ok) {
-      throw new Error("Error fetching product");
+      throw new Error("Error fetching products");
     }
 
-    const product = await response.json();
-    return product.name;
+    const products = await response.json();
+    const product = products.find((prod: { slug: string }) => prod.slug === slug);
+    return product ? product.name : "Назва продукту";
   } catch (error) {
-    console.error("Error fetching product name:", error);
-    throw error;
+    console.error("Error fetching products:", error);
+    return "Товар не знайдено";
   }
 };

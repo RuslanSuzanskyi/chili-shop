@@ -1,23 +1,29 @@
 export const getCategories = async () => {
   try {
-    const response = await fetch("/api/categories", { next: { revalidate: 3600 } });
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/categories`);
     if (!response.ok) {
       throw new Error(`Error fetching categories: ${response.statusText}`);
     }
-    return response.json();
+    return await response.json();
   } catch (error) {
     console.error("Failed to load categories", error);
     throw error;
   }
 };
 
-export async function getCategoryName(slug: string): Promise<string> {
+export const getCategoryName = async (slug: string) => {
   try {
-    const categories = await getCategories(); 
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/categories`);
+
+    if (!response.ok) {
+      throw new Error("Error fetching categories");
+    }
+
+    const categories = await response.json();
     const category = categories.find((cat: { slug: string }) => cat.slug === slug);
     return category ? category.name : "Каталог товарів";
   } catch (error) {
     console.error("Error fetching categories:", error);
     return "Каталог товарів";
   }
-}
+};
